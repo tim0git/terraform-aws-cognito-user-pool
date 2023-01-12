@@ -545,7 +545,12 @@ variable "client_token_validity_units" {
     id_token      = "minutes"
     refresh_token = "days"
   }
+}
 
+variable "client_enable_propagate_additional_user_context_data" {
+  description = "Whether to propagate additional user context data to the Cognito User Pool"
+  type        = bool
+  default     = false
 }
 
 #

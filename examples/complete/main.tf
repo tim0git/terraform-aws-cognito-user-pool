@@ -169,6 +169,7 @@ module "aws_cognito_user_pool_complete_example" {
         id_token      = "hours"
         refresh_token = "days"
       }
+      enable_propagate_additional_user_context_data = true
     },
     {
       allowed_oauth_flows                  = []
