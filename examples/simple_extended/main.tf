@@ -1,6 +1,6 @@
 module "aws_cognito_user_pool_simple_extended_example" {
 
-  source = "git@github.com:awazevr/terraform-aws-cognito-user-pool-v2.git"
+  source = "git@github.com:tim0git/terraform-aws-cognito-user-pool-v2.git"
 
   user_pool_name                                     = "simple_extended_pool"
   alias_attributes                                   = ["email", "phone_number"]

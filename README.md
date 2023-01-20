@@ -15,7 +15,7 @@ This simple example creates a AWS Cognito User Pool with the default values:
 ```
 module "aws_cognito_user_pool_simple" {
 
-  source  = "git@github.com:awazevr/terraform-aws-cognito-user-pool-v2.git"
+  source  = "git@github.com:tim0git/terraform-aws-cognito-user-pool-v2.git"
 
   user_pool_name = "mypool"
 
@@ -34,7 +34,7 @@ If you need to create Cognito User Pool resources conditionally in ealierform  v
 # This Cognito User Pool will not be created
 module "aws_cognito_user_pool_conditional_creation" {
 
-  source  = "git@github.com:awazevr/terraform-aws-cognito-user-pool-v2.git"
+  source  = "git@github.com:tim0git/terraform-aws-cognito-user-pool-v2.git"
 
   user_pool_name = "conditional_user_pool"
 
@@ -58,7 +58,7 @@ This more complete example creates a AWS Cognito User Pool using a detailed conf
 ```
 module "aws_cognito_user_pool_complete" {
 
-  source  = "git@github.com:awazevr/terraform-aws-cognito-user-pool-v2.git"
+  source  = "git@github.com:tim0git/terraform-aws-cognito-user-pool-v2.git"
 
   user_pool_name           = "mypool"
   alias_attributes         = ["email", "phone_number"]
